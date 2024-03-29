@@ -10,6 +10,7 @@ import { TranslatePipe } from '@mycomp/ui-sdk/i18n';
   styleUrls: ['./button.component.css'],
 })
 export class ButtonComponent {
+  constructor(private translatePipe: TranslatePipe) {}
   @Input()
   label = 'Click me';
 }
